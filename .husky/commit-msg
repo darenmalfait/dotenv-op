@@ -1,0 +1,11 @@
+#!/bin/sh
+PATH="/usr/local/bin:$PATH"
+
+if [ -f "$HOME/n/bin/n" ]
+then
+  PATH="$HOME/n/bin:$PATH"
+fi
+
+. "$(dirname "$0")/_/husky.sh"
+
+npx --no-install commitlint --edit

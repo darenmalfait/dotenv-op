@@ -1,0 +1,22 @@
+{
+  "name": "dotenv-op",
+  "version": "1.0.0",
+  "description": "store and fetch dotenv files in 1password",
+  "keywords": [
+    "dotenv",
+    "1password"
+  ],
+  "license": "MIT",
+  "author": "Daren Malfait <me@daren.be> (https://daren.be)",
+  "main": "dotenv-op.sh",
+  "scripts": {
+    "prepare": "husky install",
+    "validate": "shellcheck dotenv-op.sh"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2",
+    "shellcheck": "^1.1.0"
+  }
+}
