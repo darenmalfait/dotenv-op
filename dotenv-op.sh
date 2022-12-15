@@ -36,10 +36,6 @@ signin() {
   echo "$token" > "$HOME/.config/op/session"
 }
 
-document_filename() {
-  echo "[$PROJECT] $ENVIRONMENT"
-}
-
 dot_env_filename() {
   echo "[$PROJECT] .env.$ENVIRONMENT"
 }
